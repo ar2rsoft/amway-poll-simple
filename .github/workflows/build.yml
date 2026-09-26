@@ -1,0 +1,28 @@
+name: Build archive
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Minify
+        run: bash minify.sh
+
+      - name: Pack archive
+        run: |
+          mkdir -p dist
+          zip -r dist/amway-poll.zip assets app.min.js style.min.css README.md index.html -x "*.DS_Store"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: amway-poll
+          path: dist/amway-poll.zip

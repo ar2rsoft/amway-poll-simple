@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Пример встраивания опросника Double Energy</title>
+
+  <!-- Шаг 1: Добавьте 2 строки ниже дял подключения css-стилей и js-кода для работы опросника -->
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+
+
+  <!-- Эти стили добавлять не надо -->
+  <style>
+    /* Стили самой статьи и кнопки — только для примера, можно оформить как угодно */
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    .article h1 {
+      margin-top: 0;
+      color: #006f44;
+    }
+
+    .my-button {
+      padding: 12px 28px;
+      border: 0;
+      border-radius: 28px;
+      background: #006f44;
+      color: #fff;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .my-link {
+      color: #006f44;
+    }
+  </style>
+</head>
+<body>
+<article class="article">
+  <h1>Пример встраивания опросника</h1>
+
+  <!-- Шаг 2: Добавьте кнопку с классом "double-energy-poll-button" и аттрибутами data-logo, data-product, data-buy -->
+  <button type="button" class="my-button double-energy-poll-button"
+          data-logo="assets/nutrilite.svg"
+          data-product="assets/double-energy-product.png"
+          data-buy="https://example.com/double-energy">
+    Встроенная кнопка →
+  </button>
+
+</article>
+
+</body>
+</html>
