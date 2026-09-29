@@ -221,6 +221,60 @@
         "Sizda bir nechta xavf omillari bormi: baliq va sabzavotlarni kam iste’mol qilish, stress, parhezlar, quyoshda kam bo‘lish?",
       ],
     },
+
+    en: {
+      first: {
+        title: "Online diagnostics",
+        description:
+            "Check your energy and recovery levels.\nFatigue can build up unnoticed — this short survey will help you understand whether there are signals worth paying attention to.",
+        start: "Start",
+        disclaimer:
+            "*Developed in collaboration with the Academician E.D. Dalenov Research Institute of Preventive Medicine",
+      },
+      form: {
+        subtitle: "Check your energy and recovery levels",
+        question: "Question",
+        answers: ["no", "sometimes", "often"],
+        prev: "Back",
+        result: "Result",
+        points: ["0 points", "{n} point", "{n} points", "{n} points"],
+        pointsShort: "pts",
+      },
+      last: {
+        title: "Diagnostic result",
+        retry: "Take again",
+        buy: "Buy",
+        productDescription:
+            "Nutrilite™ Double Energy is the key to caring for yourself and your family, supporting overall health and boosting energy levels.\n\nNutrilite™ Double Energy is a systemic solution designed for comprehensive support of the body, resource recovery and prevention of deficiency conditions. Now with an improved Omega-3 Complex Plus formula that provides higher bioavailability and environmental sustainability.\n\nThe effectiveness of this approach was confirmed in a study by the Academician E. D. Dalenov Research Institute of Preventive Medicine.",
+        results: {
+          low: "According to the test results, you have a low risk of vitamin and mineral deficiencies",
+          medium: "According to the test results, you may have subclinical vitamin and mineral deficiencies",
+          high: "According to the test results, you have a high probability of multiple vitamin and mineral deficiencies",
+        },
+        history: "History",
+        date: "Date",
+        score: "Points",
+        interpretation: "Interpretation",
+        dynamicsTitle: "Dynamics",
+        dynamics: {
+          decreased: "Risk level has decreased (improvement)",
+          same: "Risk level has remained the same",
+          increased: "Risk level has increased",
+        },
+      },
+      questions: [
+        "Do you feel tired, low on energy, or often need coffee or sweets to keep yourself going?",
+        "Do you notice difficulty concentrating, forgetfulness or a feeling of “brain fog”?",
+        "Do you often experience irritability, low mood, anxiety or increased emotional exhaustion?",
+        "Do you have sleep problems or feel that sleep does not fully restore you?",
+        "Do you experience muscle cramps, pain, stiffness or slow recovery after physical activity?",
+        "Have you started getting sick more often or taking longer to recover from infections?",
+        "Do you notice dry skin, brittle nails or deterioration in hair quality?",
+        "Do you often have bloating, irregular bowel movements or a feeling of heaviness after eating?",
+        "Do you notice eye strain, increased sensitivity to light or decreased vision?",
+        "Do you have several risk factors: rarely eating fish and vegetables, stress, diets, rarely being in the sun?",
+      ],
+    },
   };
 
   // Название продукта одинаково во всех языках
@@ -274,7 +328,7 @@
   }
 
   // Параметры опросника берутся из data-атрибутов кнопки (или блока):
-  //   data-lang="ru|kz|mn|uz" data-logo="путь к логотипу" data-product="путь к фото продукта"
+  //   data-lang="ru|kz|mn|uz|en" data-logo="путь к логотипу" data-product="путь к фото продукта"
   //   data-buy="ссылка на страницу покупки"
   // Если data-logo / data-product / data-buy не указаны, элемент просто не выводится
   function readOptions({lang, logo, product, buy} = {}) {
