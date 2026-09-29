@@ -167,6 +167,60 @@
         "Танд хэд хэдэн эрсдэлт хүчин зүйл байна уу: загас, ногоо ховор хэрэглэдэг, стресс, диет, нарны гэрэлд ховор гардаг?",
       ],
     },
+
+    uz: {
+      first: {
+        title: "Onlayn diagnostika",
+        description:
+            "Energiya va tiklanish darajangizni tekshiring.\nBa’zan charchoq sezdirmasdan to‘planib boradi — ushbu qisqa so‘rovnoma e’tibor berish kerak bo‘lgan belgilar bor-yo‘qligini tushunishga yordam beradi.",
+        start: "Boshlash",
+        disclaimer:
+            "*Akademik Ye.D. Dalenov nomidagi Profilaktik tibbiyot ilmiy-tadqiqot instituti bilan hamkorlikda ishlab chiqilgan",
+      },
+      form: {
+        subtitle: "Energiya va tiklanish darajangizni tekshiring",
+        question: "Savol",
+        answers: ["yo‘q", "ba’zan", "tez-tez"],
+        prev: "Orqaga",
+        result: "Natija",
+        points: ["{n} ball"],
+        pointsShort: "ball",
+      },
+      last: {
+        title: "Diagnostika natijasi",
+        retry: "Qayta o‘tish",
+        buy: "Sotib olish",
+        productDescription:
+            "Nutrilite™ Double Energy – o‘zingiz va oilangizga g‘amxo‘rlik qilish, umumiy salomatlikni qo‘llab-quvvatlash va energiya darajasini oshirishning kalitidir.\n\nNutrilite™ Double Energy — organizmni kompleks qo‘llab-quvvatlash, resursni tiklash va tanqislik holatlarining oldini olish uchun yaratilgan tizimli yechim. Endi yuqori o‘zlashtirilish va ekologik tozalikni ta’minlaydigan Omega-3 Kompleks Plyus yaxshilangan formulasi bilan.\n\nUshbu yondashuvning samaradorligi akademik Ye. D. Dalenov nomidagi Profilaktik tibbiyot ilmiy-tadqiqot institutining tadqiqotida tasdiqlangan.",
+        results: {
+          low: "Test natijalariga ko‘ra, sizda vitamin va minerallar tanqisligi xavfi past",
+          medium: "Test natijalariga ko‘ra, sizda vitamin va minerallarning subklinik tanqisligi bo‘lishi mumkin",
+          high: "Test natijalariga ko‘ra, sizda vitamin va minerallar politanqisligi ehtimoli yuqori",
+        },
+        history: "O‘tishlar tarixi",
+        date: "Sana",
+        score: "Ballar",
+        interpretation: "Izoh",
+        dynamicsTitle: "Dinamika",
+        dynamics: {
+          decreased: "Xavf darajasi pasaydi (yaxshilanish)",
+          same: "Xavf darajasi avvalgi holatida qoldi",
+          increased: "Xavf darajasi oshdi",
+        },
+      },
+      questions: [
+        "Charchoq, energiya pasayishi, o‘zingizni tez-tez qahva yoki shirinlik bilan tetiklashtirish ehtiyojini his qilasizmi?",
+        "Diqqatni jamlashda qiyinchilik, unutuvchanlik yoki «boshdagi tuman» hissini sezasizmi?",
+        "Tez-tez asabiylashish, kayfiyat tushishi, xavotir yoki kuchli hissiy charchoqni his qilasizmi?",
+        "Uyqu buzilishlari bormi yoki uyqu to‘liq tiklanish bermayotgandek tuyuladimi?",
+        "Mushaklarda tortishish, og‘riq, qotish yoki jismoniy mashqlardan keyin sekin tiklanish kuzatiladimi?",
+        "Tez-tez kasal bo‘ladigan yoki infeksiyalardan keyin uzoqroq tiklanadigan bo‘ldingizmi?",
+        "Teri quruqligi, tirnoqlarning mo‘rtligi yoki soch sifatining yomonlashishini sezasizmi?",
+        "Tez-tez qorin dam bo‘lishi, beqaror ich kelishi yoki ovqatdan keyin og‘irlik hissi bo‘ladimi?",
+        "Ko‘z charchashi, yorug‘likka sezuvchanlik oshishi yoki ko‘rishning pasayishini sezasizmi?",
+        "Sizda bir nechta xavf omillari bormi: baliq va sabzavotlarni kam iste’mol qilish, stress, parhezlar, quyoshda kam bo‘lish?",
+      ],
+    },
   };
 
   // Название продукта одинаково во всех языках
@@ -220,7 +274,7 @@
   }
 
   // Параметры опросника берутся из data-атрибутов кнопки (или блока):
-  //   data-lang="ru|kz|mn" data-logo="путь к логотипу" data-product="путь к фото продукта"
+  //   data-lang="ru|kz|mn|uz" data-logo="путь к логотипу" data-product="путь к фото продукта"
   //   data-buy="ссылка на страницу покупки"
   // Если data-logo / data-product / data-buy не указаны, элемент просто не выводится
   function readOptions({lang, logo, product, buy} = {}) {
