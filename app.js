@@ -329,10 +329,12 @@
 
   // Параметры опросника берутся из data-атрибутов кнопки (или блока):
   //   data-lang="ru|kz|mn|uz|en" data-logo="путь к логотипу" data-product="путь к фото продукта"
-  //   data-buy="ссылка на страницу покупки"
-  // Если data-logo / data-product / data-buy не указаны, элемент просто не выводится
-  function readOptions({lang, logo, product, buy} = {}) {
-    return {lang: detectLocale(lang), logo, product, buy};
+  //   data-buy="ссылка на страницу покупки" data-energy-logo="путь к логотипу Double Energy"
+  //   data-form-image="путь к картинке на первом экране"
+  // Если data-logo / data-product / data-buy / data-energy-logo / data-form-image
+  // не указаны, элемент просто не выводится
+  function readOptions({lang, logo, product, buy, energyLogo, formImage} = {}) {
+    return {lang: detectLocale(lang), logo, product, buy, energyLogo, formImage};
   }
 
   // Параметры текущей отрисовки. Каждый экземпляр опросника выставляет свои
@@ -425,13 +427,13 @@
       ${renderTitle(t.first.title)}
       <div class="de-welcome">
         <div class="de-welcome__content">
-          <img src="${asset("double-energy.svg")}" class="de-welcome__logo" alt="Double Energy">
+          ${current.energyLogo ? `<img src="${current.energyLogo}" class="de-welcome__logo" alt="Double Energy">` : ""}
           <p class="de-text">${t.first.description}</p>
           <p class="de-caption">${t.first.disclaimer}</p>
           <button type="button" class="de-btn de-welcome__start" data-action="start">${t.first.start}${ARROW}</button>
           
         </div>
-        <div class="de-welcome__image de-welcome__image--${current.lang}"></div>
+        ${current.formImage ? `<div class="de-welcome__image" style="background-image: url('${current.formImage}')"></div>` : ""}
       </div>`;
   }
 

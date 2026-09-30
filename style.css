@@ -285,7 +285,7 @@ html.de-modal-open body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 50%;
+  flex: 1;
   padding: 48px;
   background: var(--de-bg-light);
 }
@@ -302,15 +302,7 @@ html.de-modal-open body {
 .de-survey .de-welcome__image {
   width: 50%;
   min-height: 240px;
-  background: url("assets/form-ru.jpeg") center / cover no-repeat;
-}
-
-.de-survey .de-welcome__image--kz {
-  background-image: url("assets/form-kz.jpeg");
-}
-
-.de-survey .de-welcome__image--mn {
-  background-image: url("assets/form-mn.jpeg");
+  background: center / cover no-repeat;
 }
 
 /* ---------- Step 1: Form ---------- */
