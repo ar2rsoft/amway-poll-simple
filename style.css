@@ -192,11 +192,12 @@ html.de-modal-open body {
 }
 
 .de-survey .de-caption {
-  margin: auto 0 0;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  letter-spacing: 0.03333em;
-  color: var(--de-grey-8);
+  margin: 15px 0 0 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03125em;
+  white-space: pre-line;
+  font-weight: bold;
 }
 
 .de-survey .de-h5 {

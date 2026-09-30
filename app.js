@@ -13,7 +13,7 @@
             "Проверьте уровень своей энергии и восстановления.\nИногда усталость накапливается незаметно — этот короткий опрос поможет понять, есть ли сигналы, на которые стоит обратить внимание.",
         start: "Начать",
         disclaimer:
-            "*Разработан совместно с Научно-исследовательским институтом профилактической медицины им. академика Е.Д. Даленова",
+            "Разработан совместно с Научно&#8209;исследовательским институтом профилактической медицины им. академика Е.Д. Даленова",
       },
       form: {
         subtitle: "Проверьте уровень своей энергии и восстановления",
@@ -67,7 +67,7 @@
             "Энергия мен қалпына келу деңгейіңізді тексеріңіз.\nКейде шаршау байқалмай жинала береді — осы қысқа сауалнама назар аударуға тұрарлық белгілер бар-жоғын түсінуге көмектеседі.",
         start: "Бастау",
         disclaimer:
-            "*Академик Е.Д. Даленов атындағы Профилактикалық медицина ғылыми-зерттеу институтымен бірлесіп әзірленген",
+            "Академик Е.Д. Даленов атындағы Профилактикалық медицина ғылыми&#8209;зерттеу институтымен бірлесіп әзірленген",
       },
       form: {
         subtitle: "Энергия мен қалпына келу деңгейіңізді тексеріңіз",
@@ -121,7 +121,7 @@
             "Энерги болон сэргэлтийнхээ түвшинг шалгаарай.\nЗаримдаа ядаргаа мэдрэгдэхгүй хуримтлагддаг — энэхүү богино асуумж нь анхаарал хандуулах ёстой шинж тэмдэг байгаа эсэхийг тодорхойлоход тусална.",
         start: "Эхлэх",
         disclaimer:
-            "*Академич Е.Д. Даленовын нэрэмжит Урьдчилан сэргийлэх анагаах ухааны эрдэм шинжилгээний хүрээлэнтэй хамтран боловсруулав",
+            "Академич Е.Д. Даленовын нэрэмжит Урьдчилан сэргийлэх анагаах ухааны эрдэм шинжилгээний хүрээлэнтэй хамтран боловсруулав",
       },
       form: {
         subtitle: "Энерги болон сэргэлтийнхээ түвшинг шалгаарай",
@@ -175,7 +175,7 @@
             "Energiya va tiklanish darajangizni tekshiring.\nBa’zan charchoq sezdirmasdan to‘planib boradi — ushbu qisqa so‘rovnoma e’tibor berish kerak bo‘lgan belgilar bor-yo‘qligini tushunishga yordam beradi.",
         start: "Boshlash",
         disclaimer:
-            "*Akademik Ye.D. Dalenov nomidagi Profilaktik tibbiyot ilmiy-tadqiqot instituti bilan hamkorlikda ishlab chiqilgan",
+            "Akademik Ye.D. Dalenov nomidagi Profilaktik tibbiyot ilmiy&#8209;tadqiqot instituti bilan hamkorlikda ishlab chiqilgan",
       },
       form: {
         subtitle: "Energiya va tiklanish darajangizni tekshiring",
@@ -229,7 +229,7 @@
             "Check your energy and recovery levels.\nFatigue can build up unnoticed — this short survey will help you understand whether there are signals worth paying attention to.",
         start: "Start",
         disclaimer:
-            "*Developed in collaboration with the Academician E.D. Dalenov Research Institute of Preventive Medicine",
+            "Developed in collaboration with the Academician E.D. Dalenov Research Institute of Preventive Medicine",
       },
       form: {
         subtitle: "Check your energy and recovery levels",
@@ -427,8 +427,9 @@
         <div class="de-welcome__content">
           <img src="${asset("double-energy.svg")}" class="de-welcome__logo" alt="Double Energy">
           <p class="de-text">${t.first.description}</p>
-          <button type="button" class="de-btn de-welcome__start" data-action="start">${t.first.start}${ARROW}</button>
           <p class="de-caption">${t.first.disclaimer}</p>
+          <button type="button" class="de-btn de-welcome__start" data-action="start">${t.first.start}${ARROW}</button>
+          
         </div>
         <div class="de-welcome__image de-welcome__image--${current.lang}"></div>
       </div>`;
