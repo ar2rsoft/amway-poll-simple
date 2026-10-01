@@ -1,0 +1,13 @@
+{
+  "name": "amway-poll",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "js-yaml": "^5.4.2"
+  }
+}

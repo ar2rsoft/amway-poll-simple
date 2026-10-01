@@ -1,3 +1,4 @@
 .idea
 app.min.js
 style.min.css
+node_modules
