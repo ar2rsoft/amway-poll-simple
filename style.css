@@ -299,6 +299,14 @@ html.de-modal-open body {
   margin: 48px 0;
 }
 
+.de-survey .de-welcome__note {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: italic;
+  color: var(--de-grey-8);
+}
+
 .de-survey .de-welcome__image {
   width: 50%;
   min-height: 240px;

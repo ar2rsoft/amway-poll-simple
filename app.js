@@ -162,7 +162,7 @@
           <p class="de-text">${t.first.description}</p>
           <p class="de-caption">${t.first.disclaimer}</p>
           <button type="button" class="de-btn de-welcome__start" data-action="start">${t.first.start}${ARROW}</button>
-          
+          <p class="de-welcome__note">${t.first.note}</p>
         </div>
         ${current.formImage ? `<div class="de-welcome__image" style="background-image: url('${current.formImage}')"></div>` : ""}
       </div>`;

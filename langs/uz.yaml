@@ -2,9 +2,10 @@ first:
   title: Onlayn diagnostika
   description: |-
     Energiya va tiklanish darajangizni tekshiring.
-    Ba’zan charchoq sezdirmasdan to‘planib boradi — ushbu qisqa so‘rovnoma e’tibor berish kerak bo‘lgan belgilar bor-yo‘qligini tushunishga yordam beradi.
+    Ba’zan charchoq sezdirmasdan to‘planib boradi — ushbu qisqa so‘rovnoma* e’tibor berish kerak bo‘lgan belgilar bor-yo‘qligini tushunishga yordam beradi.
   start: Boshlash
   disclaimer: Akademik Ye.D. Dalenov nomidagi Profilaktik tibbiyot ilmiy&#8209;tadqiqot instituti bilan hamkorlikda ishlab chiqilgan
+  note: '*Ushbu so‘rovnoma natijalari faqat ma’lumot uchun mo‘ljallangan va tibbiy tashxis hisoblanmaydi. So‘rovnoma salomatlik holati haqida xabardorlikni oshirish uchun ishlab chiqilgan va mutaxassis maslahatining o‘rnini bosmaydi.'
 form:
   subtitle: Energiya va tiklanish darajangizni tekshiring
   question: Savol

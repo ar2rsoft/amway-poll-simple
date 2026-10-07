@@ -2,9 +2,10 @@ first:
   title: Online diagnostics
   description: |-
     Check your energy and recovery levels.
-    Fatigue can build up unnoticed — this short survey will help you understand whether there are signals worth paying attention to.
+    Fatigue can build up unnoticed — this short survey* will help you understand whether there are signals worth paying attention to.
   start: Start
   disclaimer: Developed in collaboration with the Academician E.D. Dalenov Research Institute of Preventive Medicine
+  note: '*The results of this questionnaire are for informational purposes only and do not constitute a medical diagnosis. The questionnaire is designed to raise health awareness and does not replace a consultation with a specialist.'
 form:
   subtitle: Check your energy and recovery levels
   question: Question
